@@ -49,7 +49,7 @@ Principal Software Engineer at Autodesk. Ashburn, VA.
 
 </div>
 
-- [**OpenGPL**](https://github.com/sadayamuthu/opengpl) ([opengpl.org](https://opengpl.org)): Open Generative Policy Language, a declarative policy language for AI behavioral constraints. It has a schema spec, a parser, and compliance mappings to NIST AI RMF, FedRAMP and ISO 42001, and ships with an SDK, a CLI and a Docker sidecar for runtime policy enforcement in AI pipelines.
+- [**OpenGPL**](https://github.com/sadayamuthu/opengpl) ([opengpl.org](https://opengpl.org)): Open Generative Policy Language, a declarative policy language for AI behavioral constraints. It has a schema spec, a parser, and compliance mappings to NIST AI RMF, FedRAMP and ISO 42001, and ships with an SDK, a CLI and a Docker sidecar for runtime policy enforcement in AI pipelines. Zenodo: [10.5281/zenodo.23844061](https://doi.org/10.5281/zenodo.23844061).
 
 ## Security compliance: OpenAstra
 
