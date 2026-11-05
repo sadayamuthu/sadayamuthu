@@ -37,9 +37,9 @@ Principal Software Engineer at Autodesk. Ashburn, VA.
 
 </div>
 
-- [**ZeroEgress**](https://github.com/sadayamuthu/zero-egress): an offline AI code editor. Chat, agent, quick edit and autocomplete with local models (Ollama, vLLM, LM Studio); nothing leaves your machine. Paper: [10.5281/zenodo.23679809](https://doi.org/10.5281/zenodo.23679809).
-- [**mergelock**](https://github.com/sadayamuthu/mergelock): catches the merge conflicts git can't see between parallel AI agent branches, like a changed signature against a new caller or a deleted symbol that's still in use. TS/JS/Python, tree-sitter based. CLI and MCP server, installable from [homebrew-tap](https://github.com/sadayamuthu/homebrew-tap). Paper: [10.5281/zenodo.23637444](https://doi.org/10.5281/zenodo.23637444).
-- [**unasked**](https://github.com/sadayamuthu/unasked): shows what your coding agent changed that you never asked for. It scores every hunk against your prompts and the agent's transcript, then reverts just those hunks, with undo. Works with Claude Code and Codex, runs locally, no network. Paper: [10.5281/zenodo.23637741](https://doi.org/10.5281/zenodo.23637741).
+- [**ZeroEgress**](https://github.com/sadayamuthu/zero-egress): an offline AI code editor. Chat, agent, quick edit and autocomplete with local models (Ollama, vLLM, LM Studio); nothing leaves your machine. Paper: [10.5281/zenodo.23679808](https://doi.org/10.5281/zenodo.23679808).
+- [**mergelock**](https://github.com/sadayamuthu/mergelock): catches the merge conflicts git can't see between parallel AI agent branches, like a changed signature against a new caller or a deleted symbol that's still in use. TS/JS/Python, tree-sitter based. CLI and MCP server, installable from [homebrew-tap](https://github.com/sadayamuthu/homebrew-tap). Paper: [10.5281/zenodo.23637443](https://doi.org/10.5281/zenodo.23637443).
+- [**unasked**](https://github.com/sadayamuthu/unasked): shows what your coding agent changed that you never asked for. It scores every hunk against your prompts and the agent's transcript, then reverts just those hunks, with undo. Works with Claude Code and Codex, runs locally, no network. Paper: [10.5281/zenodo.23637740](https://doi.org/10.5281/zenodo.23637740).
 
 ## AI policy
 
@@ -49,6 +49,7 @@ Principal Software Engineer at Autodesk. Ashburn, VA.
 
 </div>
 
+- [**anySQL**](https://github.com/sadayamuthu/anySQL) ([anysql.org](https://anysql.org)): a SQL analytics engine for AI systems. Query LLM responses, agent traces and RAG pipelines with standard SQL, in-memory on DuckDB and persisted to SQLite, with zero configuration. Zenodo: [10.5281/zenodo.23980548](https://doi.org/10.5281/zenodo.23980548).
 - [**OpenGPL**](https://github.com/sadayamuthu/opengpl) ([opengpl.org](https://opengpl.org)): Open Generative Policy Language, a declarative policy language for AI behavioral constraints. It has a schema spec, a parser, and compliance mappings to NIST AI RMF, FedRAMP and ISO 42001, and ships with an SDK, a CLI and a Docker sidecar for runtime policy enforcement in AI pipelines. Zenodo: [10.5281/zenodo.23844061](https://doi.org/10.5281/zenodo.23844061).
 
 ## Security compliance: OpenAstra
@@ -62,10 +63,10 @@ Principal Software Engineer at Autodesk. Ashburn, VA.
 
 </div>
 
-- [**ControlGate**](https://github.com/sadayamuthu/controlgate): an automated NIST 800-53 Rev. 5 compliance gate. Scans code changes across 8 security domains at pre-commit and PR time, with block/warn verdicts and remediation guidance. Validated against [controlgate-test-suite](https://github.com/sadayamuthu/controlgate-test-suite), a set of deliberately vulnerable projects.
-- [**OCBC**](https://github.com/sadayamuthu/ocbc): Open Controls Baseline Catalog, a machine-readable NIST SP 800-53 Rev. 5 + FedRAMP catalog. Updated daily, zero install, cloud-agnostic.
+- [**ControlGate**](https://github.com/sadayamuthu/controlgate): an automated NIST 800-53 Rev. 5 compliance gate. Scans code changes across 8 security domains at pre-commit and PR time, with block/warn verdicts and remediation guidance. Validated against [controlgate-test-suite](https://github.com/sadayamuthu/controlgate-test-suite), a set of deliberately vulnerable projects. Zenodo: [10.5281/zenodo.23980530](https://doi.org/10.5281/zenodo.23980530).
+- [**OCBC**](https://github.com/sadayamuthu/ocbc): Open Controls Baseline Catalog, a machine-readable NIST SP 800-53 Rev. 5 + FedRAMP catalog. Updated daily, zero install, cloud-agnostic. Zenodo: [10.5281/zenodo.23980534](https://doi.org/10.5281/zenodo.23980534).
 - [**nist-cloud-security-baseline**](https://github.com/sadayamuthu/nist-cloud-security-baseline): maps NIST SP 800-53 Rev. 5 controls to FedRAMP baselines via OSCAL, published as enriched JSON.
-- [**OEBC**](https://github.com/sadayamuthu/oebc): Open Exposure Baseline Catalog.
+- [**OEBC**](https://github.com/sadayamuthu/oebc): Open Exposure Baseline Catalog. Zenodo: [10.5281/zenodo.23980544](https://doi.org/10.5281/zenodo.23980544).
 
 ---
 
