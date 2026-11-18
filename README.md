@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=0:0f2027,50:203a43,100:2c5364&text=Karthikeyan%20Sadayamuthu&fontColor=ffffff&fontSize=48&fontAlignY=38&desc=Principal%20engineer%20%C2%B7%20agentic%20AI%20%C2%B7%20security%20and%20compliance%20engineering&descAlignY=58&descSize=17&animation=fadeIn" width="100%" alt="Karthikeyan Sadayamuthu" />
 
-<a href="https://github.com/sadayamuthu"><img src="https://readme-typing-svg.demolab.com/?lines=Principal+Software+Engineer+%40+Autodesk;Agentic+AI+platforms+for+regulated+environments;FedRAMP+Moderate+%C2%B7+AWS+GovCloud+%C2%B7+NIST+800-53;Creator+of+OpenGPL+and+OpenAstra;ZeroEgress+%C2%B7+mergelock+%C2%B7+unasked+%C2%B7+ControlGate;Traveler+%C2%B7+Author+%C2%B7+Car+freak+%C2%B7+Hiker&font=Fira+Code&size=20&duration=3200&pause=800&color=2C5364&center=true&vCenter=true&width=720&height=48" alt="typing banner" /></a>
+<a href="https://github.com/sadayamuthu"><img src="https://readme-typing-svg.demolab.com/?lines=Principal+Software+Engineer+%40+Autodesk;Agentic+AI+platforms+for+regulated+environments;FedRAMP+Moderate+%C2%B7+AWS+GovCloud+%C2%B7+NIST+800-53;Creator+of+OpenGPL+and+OpenAstra;ZeroEgress+%C2%B7+mergelock+%C2%B7+unasked+%C2%B7+ControlGate;anySQL+%C2%B7+OEBC+%C2%B7+ExposureGate;Traveler+%C2%B7+Author+%C2%B7+Car+freak+%C2%B7+Hiker&font=Fira+Code&size=20&duration=3200&pause=800&color=2C5364&center=true&vCenter=true&width=720&height=48" alt="typing banner" /></a>
 
 <a href="http://sadayamuthu.com"><img src="https://img.shields.io/badge/Website-sadayamuthu.com-2c5364?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website" /></a>
 <a href="https://www.linkedin.com/in/sadayamuthu"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
@@ -21,7 +21,7 @@
 
 I'm a principal engineer with 16+ years building secure, large-scale software platforms, now focused on agentic AI for commercial and regulated environments.
 
-In open source I build in two areas: tools for AI coding agents, and machine-readable security compliance. On the agent side that means an offline AI code editor, and catching what parallel agents break and what they change without being asked. On the compliance side it means turning NIST SP 800-53 and FedRAMP into data and pre-commit checks that developers can actually run.
+In open source I build in three areas: tools for AI coding agents, observability for AI systems and software exposure, and machine-readable security compliance. On the agent side that means an offline AI code editor, and catching what parallel agents break and what they change without being asked. On the observability side it means querying agent telemetry with SQL and gating exploited vulnerabilities before they merge. On the compliance side it means turning NIST SP 800-53 and FedRAMP into data and pre-commit checks that developers can actually run.
 
 Principal Software Engineer at Autodesk. Ashburn, VA.
 
@@ -49,8 +49,7 @@ Principal Software Engineer at Autodesk. Ashburn, VA.
 
 </div>
 
-- [**anySQL**](https://github.com/sadayamuthu/anySQL) ([anysql.org](https://anysql.org)): a SQL analytics engine for AI systems. Query LLM responses, agent traces and RAG pipelines with standard SQL, in-memory on DuckDB and persisted to SQLite, with zero configuration. Zenodo: [10.5281/zenodo.23980548](https://doi.org/10.5281/zenodo.23980548).
-- [**OpenGPL**](https://github.com/sadayamuthu/opengpl) ([opengpl.org](https://opengpl.org)): Open Generative Policy Language, a declarative policy language for AI behavioral constraints. It has a schema spec, a parser, and compliance mappings to NIST AI RMF, FedRAMP and ISO 42001, and ships with an SDK, a CLI and a Docker sidecar for runtime policy enforcement in AI pipelines. Zenodo: [10.5281/zenodo.23844061](https://doi.org/10.5281/zenodo.23844061).
+- [**OpenGPL**](https://github.com/sadayamuthu/opengpl) ([opengpl.org](https://opengpl.org)): Governance Policy Language, an open, declarative policy language for AI agents that produces compliance evidence. One `.gpl` file says what an agent may take in, what it may produce, and which tools and networks it may use. The SDK enforces it at runtime, logs every decision, and turns the policy and log into OSCAL mapped to NIST SP 800-53, with each control marked enforced, heuristic or declared. Ships with a CLI and a Docker sidecar. Zenodo: [10.5281/zenodo.23844061](https://doi.org/10.5281/zenodo.23844061).
 
 ## Security compliance: OpenAstra
 
@@ -66,7 +65,21 @@ Principal Software Engineer at Autodesk. Ashburn, VA.
 - [**ControlGate**](https://github.com/sadayamuthu/controlgate): an automated NIST 800-53 Rev. 5 compliance gate. Scans code changes across 8 security domains at pre-commit and PR time, with block/warn verdicts and remediation guidance. Validated against [controlgate-test-suite](https://github.com/sadayamuthu/controlgate-test-suite), a set of deliberately vulnerable projects. Zenodo: [10.5281/zenodo.23980530](https://doi.org/10.5281/zenodo.23980530).
 - [**OCBC**](https://github.com/sadayamuthu/ocbc): Open Controls Baseline Catalog, a machine-readable NIST SP 800-53 Rev. 5 + FedRAMP catalog. Updated daily, zero install, cloud-agnostic. Zenodo: [10.5281/zenodo.23980534](https://doi.org/10.5281/zenodo.23980534).
 - [**nist-cloud-security-baseline**](https://github.com/sadayamuthu/nist-cloud-security-baseline): maps NIST SP 800-53 Rev. 5 controls to FedRAMP baselines via OSCAL, published as enriched JSON.
-- [**OEBC**](https://github.com/sadayamuthu/oebc): Open Exposure Baseline Catalog. Zenodo: [10.5281/zenodo.23980544](https://doi.org/10.5281/zenodo.23980544).
+
+
+## Observability
+
+<div align="center">
+
+<a href="https://github.com/sadayamuthu/anysql"><img src="https://github-stats-extended.vercel.app/api/pin/?username=sadayamuthu&repo=anysql&theme=transparent&hide_border=true&description_lines_count=3" alt="anySQL" /></a>
+<a href="https://github.com/sadayamuthu/oebc"><img src="https://github-stats-extended.vercel.app/api/pin/?username=sadayamuthu&repo=oebc&theme=transparent&hide_border=true&description_lines_count=3" alt="OEBC" /></a>
+<a href="https://github.com/sadayamuthu/exposuregate"><img src="https://github-stats-extended.vercel.app/api/pin/?username=sadayamuthu&repo=exposuregate&theme=transparent&hide_border=true&description_lines_count=3" alt="ExposureGate" /></a>
+
+</div>
+
+- [**anySQL**](https://github.com/sadayamuthu/anysql) ([anysql.org](https://anysql.org)): a SQL analytics engine for AI systems. Query LLM responses, agent traces and RAG pipelines with standard SQL, in-memory on DuckDB and persisted to SQLite, with zero configuration. Since 0.2.0, model calls, retrieved chunks and tool calls share one per-session step sequence, so attacks split across layers can be joined. Zenodo: [10.5281/zenodo.23980548](https://doi.org/10.5281/zenodo.23980548). Paper: *Untraced by Design: Hunting Prompt-Injection Compromises in LLM Agent Telemetry with SQL*, accepted at IEEE CSTA 2026 ([artefacts](https://github.com/sadayamuthu/untraced-by-design)).
+- [**OEBC**](https://github.com/sadayamuthu/oebc): Open Exposure Baseline Catalog, a daily, machine-readable CVE catalog that joins NVD, FIRST EPSS and CISA KEV and adds a derived exposure tier per CVE. Published at [openastra.org/oebc](https://openastra.org/oebc/catalog/v0.1/latest.json.gz). Zenodo: [10.5281/zenodo.23980544](https://doi.org/10.5281/zenodo.23980544).
+- [**ExposureGate**](https://github.com/sadayamuthu/exposuregate): a pre-commit hook and PR check that blocks a change from adding a dependency version with a known, exploited vulnerability. It joins OEBC to the OSV database to grade the versions a lockfile diff adds. The counterpart to ControlGate. `pip install exposuregate`.
 
 ---
 
