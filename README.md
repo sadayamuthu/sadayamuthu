@@ -64,7 +64,6 @@ Principal Software Engineer at Autodesk. Ashburn, VA.
 
 - [**ControlGate**](https://github.com/sadayamuthu/controlgate): an automated NIST 800-53 Rev. 5 compliance gate. Scans code changes across 8 security domains at pre-commit and PR time, with block/warn verdicts and remediation guidance. Validated against [controlgate-test-suite](https://github.com/sadayamuthu/controlgate-test-suite), a set of deliberately vulnerable projects. Zenodo: [10.5281/zenodo.23980530](https://doi.org/10.5281/zenodo.23980530).
 - [**OCBC**](https://github.com/sadayamuthu/ocbc): Open Controls Baseline Catalog, a machine-readable NIST SP 800-53 Rev. 5 + FedRAMP catalog. Updated daily, zero install, cloud-agnostic. Zenodo: [10.5281/zenodo.23980534](https://doi.org/10.5281/zenodo.23980534).
-- [**nist-cloud-security-baseline**](https://github.com/sadayamuthu/nist-cloud-security-baseline): maps NIST SP 800-53 Rev. 5 controls to FedRAMP baselines via OSCAL, published as enriched JSON.
 
 
 ## Observability
