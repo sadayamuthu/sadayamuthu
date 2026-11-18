@@ -21,7 +21,7 @@
 
 I'm a principal engineer with 16+ years building secure, large-scale software platforms, now focused on agentic AI for commercial and regulated environments.
 
-In open source I build in three areas: tools for AI coding agents, observability for AI systems and software exposure, and machine-readable security compliance. On the agent side that means an offline AI code editor, and catching what parallel agents break and what they change without being asked. On the observability side it means querying agent telemetry with SQL and gating exploited vulnerabilities before they merge. On the compliance side it means turning NIST SP 800-53 and FedRAMP into data and pre-commit checks that developers can actually run.
+In open source I build in three areas: tools for AI coding agents, observability for AI systems, and machine-readable security compliance. On the agent side that means an offline AI code editor, and catching what parallel agents break and what they change without being asked. On the observability side it means querying what agents actually did with SQL. On the compliance side it means turning NIST SP 800-53, FedRAMP and exploited-CVE data into catalogs and pre-commit checks that developers can actually run.
 
 Principal Software Engineer at Autodesk. Ashburn, VA.
 
@@ -59,26 +59,27 @@ Principal Software Engineer at Autodesk. Ashburn, VA.
 
 <a href="https://github.com/sadayamuthu/controlgate"><img src="https://github-stats-extended.vercel.app/api/pin/?username=sadayamuthu&repo=controlgate&theme=transparent&hide_border=true&description_lines_count=3" alt="controlgate" /></a>
 <a href="https://github.com/sadayamuthu/ocbc"><img src="https://github-stats-extended.vercel.app/api/pin/?username=sadayamuthu&repo=ocbc&theme=transparent&hide_border=true&description_lines_count=3" alt="OCBC" /></a>
+<a href="https://github.com/sadayamuthu/exposuregate"><img src="https://github-stats-extended.vercel.app/api/pin/?username=sadayamuthu&repo=exposuregate&theme=transparent&hide_border=true&description_lines_count=3" alt="ExposureGate" /></a>
+<a href="https://github.com/sadayamuthu/oebc"><img src="https://github-stats-extended.vercel.app/api/pin/?username=sadayamuthu&repo=oebc&theme=transparent&hide_border=true&description_lines_count=3" alt="OEBC" /></a>
 
 </div>
 
+Two gates, each paired with a daily catalog: ControlGate grades control findings against OCBC, and ExposureGate grades the dependency versions a change adds against OEBC.
+
 - [**ControlGate**](https://github.com/sadayamuthu/controlgate): an automated NIST 800-53 Rev. 5 compliance gate. Scans code changes across 8 security domains at pre-commit and PR time, with block/warn verdicts and remediation guidance. Validated against [controlgate-test-suite](https://github.com/sadayamuthu/controlgate-test-suite), a set of deliberately vulnerable projects. Zenodo: [10.5281/zenodo.23980530](https://doi.org/10.5281/zenodo.23980530).
 - [**OCBC**](https://github.com/sadayamuthu/ocbc): Open Controls Baseline Catalog, a machine-readable NIST SP 800-53 Rev. 5 + FedRAMP catalog. Updated daily, zero install, cloud-agnostic. Zenodo: [10.5281/zenodo.23980534](https://doi.org/10.5281/zenodo.23980534).
-
+- [**ExposureGate**](https://github.com/sadayamuthu/exposuregate): a pre-commit hook and PR check that blocks a change from adding a dependency version with a known, exploited vulnerability. It joins OEBC to the OSV database to grade the versions a lockfile diff adds. The counterpart to ControlGate. `pip install exposuregate`.
+- [**OEBC**](https://github.com/sadayamuthu/oebc): Open Exposure Baseline Catalog, a daily, machine-readable CVE catalog that joins NVD, FIRST EPSS and CISA KEV and adds a derived exposure tier per CVE. Published at [openastra.org/oebc](https://openastra.org/oebc/catalog/v0.1/latest.json.gz). Zenodo: [10.5281/zenodo.23980544](https://doi.org/10.5281/zenodo.23980544).
 
 ## Observability
 
 <div align="center">
 
 <a href="https://github.com/sadayamuthu/anysql"><img src="https://github-stats-extended.vercel.app/api/pin/?username=sadayamuthu&repo=anysql&theme=transparent&hide_border=true&description_lines_count=3" alt="anySQL" /></a>
-<a href="https://github.com/sadayamuthu/oebc"><img src="https://github-stats-extended.vercel.app/api/pin/?username=sadayamuthu&repo=oebc&theme=transparent&hide_border=true&description_lines_count=3" alt="OEBC" /></a>
-<a href="https://github.com/sadayamuthu/exposuregate"><img src="https://github-stats-extended.vercel.app/api/pin/?username=sadayamuthu&repo=exposuregate&theme=transparent&hide_border=true&description_lines_count=3" alt="ExposureGate" /></a>
 
 </div>
 
 - [**anySQL**](https://github.com/sadayamuthu/anysql) ([anysql.org](https://anysql.org)): a SQL analytics engine for AI systems. Query LLM responses, agent traces and RAG pipelines with standard SQL, in-memory on DuckDB and persisted to SQLite, with zero configuration. Since 0.2.0, model calls, retrieved chunks and tool calls share one per-session step sequence, so attacks split across layers can be joined. Zenodo: [10.5281/zenodo.23980548](https://doi.org/10.5281/zenodo.23980548). Paper: *Untraced by Design: Hunting Prompt-Injection Compromises in LLM Agent Telemetry with SQL*, accepted at IEEE CSTA 2026 ([artefacts](https://github.com/sadayamuthu/untraced-by-design)).
-- [**OEBC**](https://github.com/sadayamuthu/oebc): Open Exposure Baseline Catalog, a daily, machine-readable CVE catalog that joins NVD, FIRST EPSS and CISA KEV and adds a derived exposure tier per CVE. Published at [openastra.org/oebc](https://openastra.org/oebc/catalog/v0.1/latest.json.gz). Zenodo: [10.5281/zenodo.23980544](https://doi.org/10.5281/zenodo.23980544).
-- [**ExposureGate**](https://github.com/sadayamuthu/exposuregate): a pre-commit hook and PR check that blocks a change from adding a dependency version with a known, exploited vulnerability. It joins OEBC to the OSV database to grade the versions a lockfile diff adds. The counterpart to ControlGate. `pip install exposuregate`.
 
 ---
 
