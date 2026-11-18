@@ -79,7 +79,7 @@ Two gates, each paired with a daily catalog: ControlGate grades control findings
 
 </div>
 
-- [**anySQL**](https://github.com/sadayamuthu/anysql) ([anysql.org](https://anysql.org)): a SQL analytics engine for AI systems. Query LLM responses, agent traces and RAG pipelines with standard SQL, in-memory on DuckDB and persisted to SQLite, with zero configuration. Since 0.2.0, model calls, retrieved chunks and tool calls share one per-session step sequence, so attacks split across layers can be joined. Zenodo: [10.5281/zenodo.23980548](https://doi.org/10.5281/zenodo.23980548). Paper: *Untraced by Design: Hunting Prompt-Injection Compromises in LLM Agent Telemetry with SQL*, accepted at IEEE CSTA 2026 ([artefacts](https://github.com/sadayamuthu/untraced-by-design)).
+- [**anySQL**](https://github.com/sadayamuthu/anysql) ([anysql.org](https://anysql.org)): a SQL analytics engine for AI systems. Query LLM responses, agent traces and RAG pipelines with standard SQL, in-memory on DuckDB and persisted to SQLite, with zero configuration. Since 0.2.0, model calls, retrieved chunks and tool calls share one per-session step sequence, so attacks split across layers can be joined. Zenodo: [10.5281/zenodo.23980548](https://doi.org/10.5281/zenodo.23980548). Paper: *Untraced by Design: Hunting Prompt-Injection Compromises in LLM Agent Telemetry with SQL*, accepted at IEEE CSTA 2026 ([Artifacts](https://github.com/sadayamuthu/untraced-by-design)).
 
 ---
 
