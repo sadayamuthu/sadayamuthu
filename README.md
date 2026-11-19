@@ -81,6 +81,16 @@ Two gates, each paired with a daily catalog: ControlGate grades control findings
 
 - [**anySQL**](https://github.com/sadayamuthu/anysql) ([anysql.org](https://anysql.org)): a SQL analytics engine for AI systems. Query LLM responses, agent traces and RAG pipelines with standard SQL, in-memory on DuckDB and persisted to SQLite, with zero configuration. Since 0.2.0, model calls, retrieved chunks and tool calls share one per-session step sequence, so attacks split across layers can be joined. Zenodo: [10.5281/zenodo.23980548](https://doi.org/10.5281/zenodo.23980548). Paper: *Untraced by Design: Hunting Prompt-Injection Compromises in LLM Agent Telemetry with SQL*, accepted at IEEE CSTA 2026 ([Artifacts](https://github.com/sadayamuthu/untraced-by-design)).
 
+## Teaching
+
+<div align="center">
+
+<a href="https://github.com/sadayamuthu/hardening-ai-agent-era"><img src="https://github-stats-extended.vercel.app/api/pin/?username=sadayamuthu&repo=hardening-ai-agent-era&theme=transparent&hide_border=true&description_lines_count=3" alt="hardening-ai-agent-era" /></a>
+
+</div>
+
+- [**Hardening for the AI Agent Era**](https://github.com/sadayamuthu/hardening-ai-agent-era): a three-hour lab module that teaches system hardening as a decision that depends on two things: the environment (commercial cloud, FedRAMP Moderate, or FedRAMP High) and whether the identity acting on the system is a human administrator or an AI operations agent. Students work from configuration files and a shared spreadsheet, with no cloud accounts needed. Includes handouts, slides, a rubric, and an instructor guide with 3-hour, 90-minute and 45-minute agendas. CC BY 4.0.
+
 ---
 
 ## Toolbox
